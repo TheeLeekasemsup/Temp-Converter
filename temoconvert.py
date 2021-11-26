@@ -1,10 +1,12 @@
 import os
 import sys
 import time
+from os import system, name
 
 def clearConsole():
     if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
         command = 'cls'
+    #for mac and linux (here, os.name is 'posix')
     else:
         command = 'clear'
     os.system(command)
